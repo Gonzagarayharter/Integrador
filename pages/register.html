@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siempre Turismo</title>
+    <link rel="shortcut icon" href="../assets/img/1f3d6.png" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/e80cf68666.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <main>
+        <h1>
+            Registrarse
+        </h1>
+        <form action="">
+            <label for="nombre"></label>
+            <input type="text" id="nombre"
+            class="input"
+            placeholder="Ingrese su nombre" required>
+    
+            <label for="apellido"></label>
+            <input type="text" id="apellido" class="input" placeholder="Ingrese su apellido" required>
+
+            <label for="mail"></label>
+            <input type="email" id="mail" class="input" placeholder="Ingrese su mail" required>
+
+            <label for="telefono"></label>
+            <input type="tel" id="telefono" class="input" placeholder="Ingrese su teléfono" required>
+
+            <label for="usuario"></label>
+            <input type="text" id="usuario" class="input" placeholder="Ingrese un usuario" required>
+
+            <label for="password"></label>
+            <input type="password" id="password" class="input" placeholder="Ingrese una contraseña" required>
+
+            <div class="label-select">
+            <div class="input-text">
+            <label for="fecha">Fecha de nacimiento</label>
+            <input type="date" class="input" id="fecha"></div>
+            
+            <div class="input-text">
+            <label for="genero">Género</label>
+            <select id="genero">
+                <option value="masculino">Masculino</option>
+                <option value="femenino">Femenino</option>
+                <option value="otro">Otro</option>
+            </select></div></div>
+    
+            <button>
+              Registrarse
+            </button>
+        </form>
+        <div class="register">
+            <a href="./login.html">¿Ya tiene cuenta?</a>
+        </div>
+    
+        <div class="goback">
+            <i class="fa-solid fa-circle-left"></i>
+            <a href="../index.html">Volver</a></div>
+        </main>
+</body>
+</html>

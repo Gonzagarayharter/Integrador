@@ -1,0 +1,117 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+body {
+    background-image: url(../assets/img/textura-papel-viejo-fondo-papel-vintage_262663-435.avif);
+    background-position: center;   
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    height: 100vh;
+    backdrop-filter: blur(100px);
+    -webkit-backdrop-filter: blur(100px);
+}
+
+main h1 {
+    font-size: 50px;
+    background: linear-gradient(180deg, #000000 0%, #af621b 100%);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.input {
+    font-size: 30px;
+    padding: 10px;
+    background-image: url(../assets/img/foto2.jpg);
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px #242424;
+    color: #af621b;
+}
+
+.input::placeholder {
+    font-size: 30px;
+    color: #000;
+    border: none;
+}
+
+.label-select {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.input-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-size: 20px;
+}
+
+select {
+    font-size: 20px;
+    padding: 5px;
+}
+
+button {
+    font-size: 20px;
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px;
+    border: 1px solid #242424;
+    border-radius: 20px;
+}
+
+button:hover {
+    background: #af621b;
+    color: #242424;
+    transition: background-color 0.5s ease-out;
+}
+
+.register {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    font-size: 20px;
+}
+
+.register a {
+    color: #134eac;
+}
+
+.goback a {
+    color: #242424;
+    font-size: 16px;
+}
