@@ -49,6 +49,7 @@
     /* Section Paquetes */
 
     .paquetes-title h2 {
+        text-align: center;
         font-size: 50px;
     }
 
@@ -172,10 +173,7 @@
     }
 
     #paquetes-section video {
-        width: 90%;
-        border: none;
-        border-radius: none;
-        box-shadow: none;
+        display: none;
     }
 
     .paquetes-info-column {
@@ -190,7 +188,7 @@
     /* Paquetes cards */
 
     .paquetes-item {
-        width: 70%;
+        width: 80%;
     }
 
     /* Contacto */
@@ -215,8 +213,9 @@
     }
 
     .footer-container {
-        width: 60%;
-        gap: 20px;
+        width: 90%;
+        justify-content: flex-start;
+        gap: 40px;
     }
 
     .linea {
