@@ -167,9 +167,15 @@
 
     /* Section Paquetes */
 
+    #paquetes-section {
+        width: 90%;
+    }
+
     #paquetes-section video {
         width: 90%;
-        height: 285px;
+        border: none;
+        border-radius: none;
+        box-shadow: none;
     }
 
     .paquetes-info-column {
@@ -184,7 +190,7 @@
     /* Paquetes cards */
 
     .paquetes-item {
-        width: 60%;
+        width: 70%;
     }
 
     /* Contacto */
@@ -209,7 +215,7 @@
     }
 
     .footer-container {
-        width: 90%;
+        width: 60%;
         gap: 20px;
     }
 
