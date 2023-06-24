@@ -1,0 +1,224 @@
+/* Tables */
+
+@media (max-width:992px) {
+    
+    /* Hero Banner */
+    .hero-banner {
+        width: 90%;
+    }
+
+    .hero-banner h1 {
+        font-size: 90px;
+    }
+
+    .hero-banner p {
+        font-size: 30px;
+    }
+
+    /* Inicio */
+
+    .inicio-info {
+        width: 90%;
+    }
+
+    .inicio-img {
+        display: none;
+    }
+
+    .inicio-info-text p {
+        padding: 0px;
+    }
+
+    .inicio-info-text p span {
+        display: flex;
+        font-size: 50px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Sobre nosotros */
+
+    .nosotros-text {
+        width: 90%;
+    }
+
+    .nosotros-text h2 {
+        font-size: 50px;
+    }
+
+    /* Section Paquetes */
+
+    .paquetes-title h2 {
+        font-size: 50px;
+    }
+
+    .paquetes-info-column {
+        width: 80%;
+    }
+
+    /* Paquetes cards */
+
+    .paquetes {
+        width: 90%;
+        gap: 70px;
+    }
+
+    .paquetes-item {
+        width: 40%;
+    }
+
+    .item-info h3 {
+        font-size: 30px;
+    }
+
+    .item-info-mid span {
+        font-size: 12px;
+    }
+
+    .item-info-bot span {
+        font-size: 15px;
+    }
+
+    .item-info-bot p {
+        font-size: 25px;
+    }
+
+    /* Contacto */
+
+    .contacto-container h2 {
+        font-size: 50px;
+    }
+
+    .contacto {
+        width: 90%;
+    }
+
+}
+
+/* Smartphone */
+
+@media (max-width: 576px) {
+
+    /* Header */
+    .menu-label {
+        display: flex;
+        order: 2;
+        cursor: pointer;
+    }
+
+    .menu-label img {
+        height: 40px;
+        width: 40px;
+    }
+
+    #menu-toggle:checked + .navbar-list {
+        display: flex;
+    }
+
+    .navbar-list {
+        position: absolute;
+        top: 118px;
+        left: 5%;
+        right: 5%;
+        width: 90%;
+        flex-direction: column;
+        background: #242424;
+        border: 2px solid #af621b;
+        border-top: none;
+        border-radius: 0px 0px 15px 15px;
+        padding: 30px 40px;
+        align-items: center;
+        gap: 20px;
+        z-index: 2;
+        display: none;
+    }
+
+    .navbar-list a, .register a, .register p {
+        font-size: 20px;
+    }
+
+    /* Hero Banner */
+    .hero-banner {
+        width: 90%;
+    }
+
+    .hero-banner h1 {
+        font-size: 80px;
+        text-align: center;
+    }
+
+    .hero-banner p {
+        font-size: 30px;
+        color: #fff;
+    }
+
+    /* Inicio */
+    .agenda {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 70%;
+    }
+
+    .agenda-text {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Section Paquetes */
+
+    #paquetes-section video {
+        width: 90%;
+        height: 285px;
+    }
+
+    .paquetes-info-column {
+        justify-content: center;
+        width: 90%;
+    }
+
+    .paquetes-info-item {
+        width: 40%;
+    }
+
+    /* Paquetes cards */
+
+    .paquetes-item {
+        width: 60%;
+    }
+
+    /* Contacto */
+
+    .contacto {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contacto-form, .contacto-info {
+        width: 100%;
+    }
+
+    .contacto-info ul {
+        align-items: center;
+    }
+
+    /* Footer */
+
+    .footer-start {
+        background-color: #242424;
+    }
+
+    .footer-container {
+        width: 90%;
+        gap: 20px;
+    }
+
+    .linea {
+        width: 70%;
+    }
+
+    .footer-end {
+        margin-bottom: 20px;
+    }
+
+}
