@@ -1,0 +1,51 @@
+@-webkit-keyframes pulsate-bck {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    50% {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+@keyframes pulsate-bck {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    50% {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+.register a:hover {
+    text-decoration: underline;
+}
+
+button:hover {
+    background: #af621b;
+    color: #242424;
+    transition: background-color 0.2s ease-out;
+    -webkit-animation: pulsate-bck 0.5s ease-in-out infinite both;
+	animation: pulsate-bck 0.5s ease-in-out infinite both;
+}
+
+.goback {
+    transition: all 0.2s linear;
+}
+
+.goback:hover {
+    transform: scale(1.5) ;
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    transition: all 0.2s linear;
+}

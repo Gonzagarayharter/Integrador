@@ -7,11 +7,6 @@
     list-style-type: none;
 }
 
-html {
-    scroll-behavior: smooth;
-    scroll-padding-top: 20px;
-}
-
 /* Menu */
 
 #menu-toggle,
@@ -53,7 +48,7 @@ header {
 }
 
 .register {
-    gap: 5px;
+    gap: 12px;
 }
 
 .navbar-list {
@@ -169,12 +164,6 @@ main {
     border-radius: 20px;
 }
 
-.boton:hover {
-    background: #af621b;
-    color: #242424;
-    transition: background-color 0.5s ease-out;
-}
-
 .inicio-img img {
     width: 400px;
     height: 500px;
@@ -192,7 +181,7 @@ main {
     width: 90%;
     margin-top: 40px;
     padding: 20px;
-    border: 2px solid #af621b;
+    border: 4px double #af621b;
     color: #242424;
     border-radius: 8px;
 }
@@ -423,11 +412,6 @@ main {
     color: #e2e6ec;
 }
 
-.boton-cards:hover {
-    background: #af621b;
-    transition: background-color 0.5s ease-out;
-}
-
 .linea {
     border-color: #242424;
     width: 50%;
@@ -507,12 +491,6 @@ main {
     border-radius: 20px;
 }
 
-.contacto-form form button:hover {
-    background: #af621b;
-    color: #242424;
-    transition: background-color 0.5s ease-out;
-}
-
 .contacto-info {
     display: flex;
     flex-direction: column;
@@ -579,7 +557,6 @@ footer {
 .footer-item {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     gap: 10px;
 }
