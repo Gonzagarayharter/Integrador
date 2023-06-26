@@ -2,9 +2,10 @@
 
 @media (max-width: 576px) {
 
-    main {
+    #main {
         margin: 140px 0px 140px 0px;
     }
+
     .input {
         font-size: 25px;
         width: 80%;
