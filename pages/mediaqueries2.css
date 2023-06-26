@@ -1,0 +1,25 @@
+/* Smartphone */
+
+@media (max-width: 576px) {
+    .input {
+        width: 80%;
+    }
+
+    form button {
+        margin-top: 20px;
+    }
+
+    .register {
+        width: 80%;
+    }
+
+    .goback i, .goback a{
+        font-size: 20px;
+    }
+
+    .label-select {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+}

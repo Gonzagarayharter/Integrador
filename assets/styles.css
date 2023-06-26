@@ -572,7 +572,6 @@ footer {
 .footer-container {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
     gap: 50px;
     padding: 40px 0px 0px 0px;
 }
@@ -580,6 +579,8 @@ footer {
 .footer-item {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 10px;
 }
 
@@ -590,6 +591,8 @@ footer {
 .footer-item-info {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 10px;
 }
 
