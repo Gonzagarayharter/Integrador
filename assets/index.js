@@ -38,7 +38,7 @@ const createProductTemplate = (product) => {
     <div class="paquetes-item">
             <img src="${cardImg}" alt="${name}" />
             <div class="item-info">
-              <h3><span class="bariloche">${name}</span></h3>
+              <h3 class="item-name">${name}</h3>
               <div class="item-info-mid">
                 <span class="item-info-tags">Vuelo</span>
                 <span class="item-info-tags">Hotel</span>
@@ -191,7 +191,7 @@ const createCartProductTemplate = (cartProduct) => {
   return `
     <div class="cart-item">
       <img src=${img} alt="${name}" />
-      <div class="item-info">
+      <div class="item-info-cart">
         <h3 class="item-title">${name}</h3>
         <span class="item-price">$${price}</span>
       </div>

@@ -158,6 +158,26 @@
         font-size: 20px;
     }
 
+    /* Carrito */
+
+    .cart {
+        width: 80%;
+    }
+
+    .item-info-cart h3 {
+        font-size: 20px;
+    }
+
+    .item-handler {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .buttons-cart {
+        display: flex;
+        flex-direction: column;
+    }
+
     /* Hero Banner */
     .hero-banner {
         width: 90%;
