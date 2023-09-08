@@ -57,6 +57,17 @@
         width: 80%;
     }
 
+    /* Filtros categorias */
+
+    .categories {
+        width: 80%;
+    }
+
+    .category {
+        font-size: 18px;
+        height: 100px;
+    }
+
     /* Paquetes cards */
 
     .paquetes {
@@ -94,6 +105,10 @@
         width: 90%;
     }
 
+    .mapa {
+        display: none;
+    }
+
 }
 
 /* Smartphone */
@@ -101,19 +116,15 @@
 @media (max-width: 576px) {
 
     /* Header */
-    .menu-label {
-        display: flex;
-        order: 2;
-        cursor: pointer;
-    }
-
     .menu-label img {
         height: 40px;
         width: 40px;
     }
 
-    #menu-toggle:checked + .navbar-list {
+    .menu-label {
         display: flex;
+        order: 2;
+        cursor: pointer;
     }
 
     .navbar-list {
@@ -131,7 +142,12 @@
         align-items: center;
         gap: 20px;
         z-index: 2;
-        display: none;
+        display: flex;
+    }
+
+    .open-menu {
+        transform: translateX(0%);
+        transition: all 0.4s ease;
     }
 
     .navbar-list a, .register a, .register p {
@@ -185,6 +201,17 @@
         width: 40%;
     }
 
+    /* Filtros categorias */
+
+    .categories {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .category {
+        width: 45%;
+    }
+
     /* Paquetes cards */
 
     .paquetes-item {
@@ -204,6 +231,11 @@
 
     .contacto-info ul {
         align-items: center;
+    }
+
+    .contacto-info-data li {
+        font-size: 20px;
+        padding: 0px 15px;
     }
 
     /* Footer */

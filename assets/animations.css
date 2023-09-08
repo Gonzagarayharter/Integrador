@@ -1,6 +1,6 @@
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 20px;
+    scroll-padding-top: 150px;
 }
 
 @-webkit-keyframes scale-in-center {
@@ -141,7 +141,8 @@ html {
 }
 
 .boton:hover
-, .contacto-form form button:hover {
+, .contacto-form form button:hover
+, .boton-load:hover {
     background: #af621b;
     color: #242424;
     transition: background-color 0.2s ease-out;

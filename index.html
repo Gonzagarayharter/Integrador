@@ -32,16 +32,37 @@
         class="logo"
       />
       <nav class="navbar">
-        <label for="menu-toggle" class="menu-label"
-          ><img src="./assets/img/menu.png" alt="menu" class="menu-icon"
-        /></label>
-        <input type="checkbox" id="menu-toggle" />
+        <div class="menu-label">
+          <img src="./assets/img/menu.png" alt="menu" class="menu-icon" />
+        </div>
         <ul class="navbar-list">
           <li><a href="#hero">Inicio</a></li>
           <li><a href="#nosotros">Nosotros</a></li>
-          <li><a href="#paquetes-section">Paquetes</a></li>
+          <li><a href="#paquetes-section">Viajes</a></li>
           <li><a href="#section-contacto">Contacto</a></li>
         </ul>
+        <div class="cart-label">
+          <i class="fa-solid fa-cart-shopping cart-icon">
+            <div class="cart-bubble">0</div>
+          </i>
+        </div>
+
+        <div class="cart">
+          <h2>Tus Productos</h2>
+
+          <div class="cart-container"></div>
+
+          <span class="divider"></span>
+
+          <div class="cart-total">
+            <p>Total:</p>
+            <span class="total"></span>
+          </div>
+          <button class="btn-buy">Comprar</button>
+          <button class="btn-delete">Vaciar carrito</button>
+        </div>
+
+        <div class="overlay"></div>
       </nav>
       <div class="register">
         <a href="./pages/login.html">Login</a>
@@ -50,9 +71,7 @@
       </div>
     </header>
 
-    <a href="#hero" class="gotohome">
-      <i class="fa-solid fa-circle-up"></i
-    ></a>
+    <a href="#hero" class="gotohome"> <i class="fa-solid fa-circle-up"></i></a>
 
     <main>
       <section id="hero">
@@ -159,7 +178,7 @@
       </section>
       <section id="paquetes-section">
         <div class="paquetes-title">
-          <h2>Paquetes Turísticos</h2>
+          <h2>Destinos Turísticos</h2>
           <p>Miles de <span>destinos</span> a un click de distancia</p>
         </div>
         <video
@@ -168,7 +187,19 @@
           loop
           muted
         ></video>
-        <div class="paquetes-info">
+        <!-- products -->
+      <section id="products">
+        <!-- categories -->
+        <div class="categories">
+          <button class="category active">Todas</button>
+          <button class="category" data-category="destinos-top">Destinos top</button>
+          <button class="category" data-category="paquetes">Paquetes</button>
+          <button class="category" data-category="vuelos">
+            Vuelos baratos
+          </button>
+          <button class="category" data-category="hoteles">Hotel y alojamiento</button>
+        </div>
+        <!-- <div class="paquetes-info">
           <div class="paquetes-info-column">
             <div class="paquetes-info-item">
               <div class="paquetes-info-title">
@@ -312,10 +343,10 @@
                 <a href="#">Comprar</a>
               </div>
             </div>
-          </div>
-
-          <a href="#" class="boton">Ver más</a>
-        </div>
+          </div> -->
+          <div class="products-container"></div>
+          <button class="boton-load">Ver Más</button>
+        <!-- </div> -->
       </section>
 
       <hr class="linea" />
@@ -325,44 +356,54 @@
           <h2>Contáctanos</h2>
           <div class="contacto">
             <div class="contacto-form">
-              <form action="https://formspree.io/f/xnqyewlz" method="POST">
-                <label for="nombre"></label>
-                <input
-                  type="text"
-                  id="nombre"
-                  name="nombre"
-                  class="input"
-                  placeholder="Nombre"
-                />
+              <form id="form">
+                <div class="contacto-form-input">
+                  <label for="nombre"></label>
+                  <input
+                    type="text"
+                    id="nombre"
+                    name="nombre"
+                    class="input"
+                    placeholder="Nombre"
+                  />
+                  <small></small>
+                </div>
 
-                <label for="mail"></label>
-                <input
-                  type="email"
-                  id="mail"
-                  name="mail"
-                  class="input"
-                  placeholder="Email"
-                  required
-                />
+                <div class="contacto-form-input">
+                  <label for="mail"></label>
+                  <input
+                    type="email"
+                    id="mail"
+                    name="mail"
+                    class="input"
+                    placeholder="Email"
+                  />
+                  <small></small>
+                </div>
 
-                <label for="telefono"></label>
-                <input
-                  type="tel"
-                  id="telefono"
-                  name="telefono"
-                  class="input"
-                  placeholder="Teléfono"
-                />
+                <div class="contacto-form-input">
+                  <label for="telefono"></label>
+                  <input
+                    type="tel"
+                    id="telefono"
+                    name="telefono"
+                    class="input"
+                    placeholder="Teléfono"
+                  />
+                  <small></small>
+                </div>
 
-                <label for="mensaje"></label>
-                <textarea
-                  id="mensaje"
-                  name="mensaje"
-                  rows="6"
-                  class="input"
-                  placeholder="Mensaje"
-                  required
-                ></textarea>
+                <div class="contacto-form-input">
+                  <label for="mensaje"></label>
+                  <textarea
+                    id="mensaje"
+                    name="mensaje"
+                    rows="6"
+                    class="input"
+                    placeholder="Mensaje"
+                  ></textarea>
+                  <small></small>
+                </div>
 
                 <button type="submit">Enviar!</button>
               </form>
@@ -384,8 +425,7 @@
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3283.8598750935025!2d-58.433223466063325!3d-34.60770466948958!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1687234965126!5m2!1ses!2sar"
                   width="600"
-                  height="450"
-                  style="border: 0"
+                  height="180"
                   allowfullscreen=""
                   loading="lazy"
                   referrerpolicy="no-referrer-when-downgrade"
@@ -449,5 +489,8 @@
         </div>
       </div>
     </footer>
+    <div class="add-modal"></div>
+    <script src="./assets/data.js"></script>
+    <script src="./assets/index.js"></script>
   </body>
 </html>
