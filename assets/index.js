@@ -32,7 +32,7 @@ const saveCart = () => {
 };
 
 const createProductTemplate = (product) => {
-  const { id, name, price, cardImg, category, categoryCart } = product;
+  const { id, name, price, cardImg, category } = product;
   return `
     
     <div class="paquetes-item">
@@ -54,7 +54,6 @@ const createProductTemplate = (product) => {
                 data-name='${name}'
                 data-price='${price}'
                 data-category='${category}'
-                data-categoryCart='${categoryCart}'
                 data-img='${cardImg}'>Comprar</button>
             </div>
           </div>`;
@@ -187,14 +186,13 @@ const renderCart = () => {
 };
 
 const createCartProductTemplate = (cartProduct) => {
-  const { id, name, price, img, quantity, categoryCart } = cartProduct;
+  const { id, name, price, img, quantity } = cartProduct;
   console.log(cartProduct);
   return `
     <div class="cart-item">
       <img src=${img} alt="${name}" />
       <div class="item-info">
         <h3 class="item-title">${name}</h3>
-        <p class="item-bid">${categoryCart}</p>
         <span class="item-price">$${price}</span>
       </div>
       <div class="item-handler">
@@ -233,9 +231,9 @@ const addProduct = (e) => {
 };
 
 const createProductData = (product) => {
-  const { id, name, price, img, category, categoryCart } = product;
-  return { id, name, price, img, category, categoryCart };
-}; 
+  const { id, name, price, img, category } = product;
+  return { id, name, price, img, category };
+};
 
 const isExistingCartProduct = (product) => {
   return cart.find((item) => item.id === product.id);
@@ -295,7 +293,7 @@ const handleMinusBtnEvent = (id) => {
   const existingCartProduct = cart.find((item) => item.id === id);
 
   if (existingCartProduct.quantity === 1) {
-      removeProductFromCart(existingCartProduct);
+    removeProductFromCart(existingCartProduct);
     return;
   }
   substractProductUnit(existingCartProduct);

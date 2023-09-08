@@ -1,34 +1,30 @@
 const productsData = [
   {
     id: 1,
-    name: "Orlando, Florida",
+    name: "Viaje a Orlando, Florida",
     price: 540223,
     category: "destinos-top",
-    categoryCart: "Destinos top",
     cardImg: "./assets/img/pexels-rick-han-3428289.jpg",
   },
   {
     id: 2,
-    name: "Madrid",
+    name: "Viaje a Madrid",
     price: 673140,
     category: "destinos-top",
-    categoryCart: "Destinos top",
     cardImg: "./assets/img/pexels-alex-azabache-3722818.jpg",
   },
   {
     id: 3,
-    name: "Miami",
+    name: "Viaje a Miami",
     price: 535080,
     category: "destinos-top",
-    categoryCart: "Destinos top",
     cardImg: "./assets/img/dondealojarseenmiami.jpg",
   },
   {
     id: 4,
-    name: "Cancún",
+    name: "Viaje a Cancún",
     price: 628900,
     category: "destinos-top",
-    categoryCart: "Destinos top",
     cardImg: "./assets/img/cancun-mexico-nota.jpg",
   },
   {
@@ -36,7 +32,6 @@ const productsData = [
     name: "Aéreo a Bariloche",
     price: 43600,
     category: "vuelos",
-    categoryCart: "Destinos top",
     cardImg: "./assets/img/foto2.jpg",
   },
   {
@@ -44,7 +39,6 @@ const productsData = [
     name: "Aéreo a Río de Janiero",
     price: 57120,
     category: "vuelos",
-    categoryCart: "Destinos top",
     cardImg: "./assets/img/panoramica-rio-janeiro-brasil.webp",
   },
   {
@@ -52,7 +46,6 @@ const productsData = [
     name: "Aéreo a Santiago de Chile",
     price: 45760,
     category: "vuelos",
-    categoryCart: "Destinos top",
     cardImg: "./assets/img/Vitrina_Centro_santiago-1.jpg",
   },
   {
@@ -60,7 +53,6 @@ const productsData = [
     name: "Aéreo a Puerto Iguazú",
     price: 38250,
     category: "vuelos",
-    categoryCart: "Destinos top",
     cardImg: "./assets/img/Iguazu-scaled.webp",
   },
   {
@@ -68,7 +60,6 @@ const productsData = [
     name: "Aéreo a São Paulo",
     price: 50800,
     category: "vuelos",
-    categoryCart: "Destinos top",
     cardImg: "./assets/img/L_5c1a3eae0668b_sao_paulo.jpg",
   },
   {
@@ -76,7 +67,6 @@ const productsData = [
     name: "Paquete a Costa Rica",
     price: 799000,
     category: "paquetes",
-    categoryCart: "Destinos top",
     cardImg: "./assets/img/pexels-jake-marsee-11181988.jpg",
   },
   {
@@ -84,7 +74,6 @@ const productsData = [
     name: "Paquete a Mendoza",
     price: 420000,
     category: "paquetes",
-    categoryCart: "Destinos top",
     cardImg: "./assets/img/mendoza-jumbotron.jpg",
   },
   {
@@ -92,7 +81,6 @@ const productsData = [
     name: "Paquete a El Calafate",
     price: 389000,
     category: "paquetes",
-    categoryCart: "Destinos top",
     cardImg: "./assets/img/emRt5Blhj_2000x1500__1.webp",
   },
   {
@@ -100,7 +88,6 @@ const productsData = [
     name: "Hotel en Mar del Plata",
     price: 43200,
     category: "hoteles",
-    categoryCart: "Destinos top",
     cardImg: "./assets/img/lugares-visitar-mar-del-plata.webp",
   },
   {
@@ -108,7 +95,6 @@ const productsData = [
     name: "Cabaña en San Pedro",
     price: 34000,
     category: "hoteles",
-    categoryCart: "Destinos top",
     cardImg: "./assets/img/a1b497b4-b915-4723-976a-1fdcf8358fd5.webp",
   },
   {
@@ -116,21 +102,20 @@ const productsData = [
     name: "Alojamiento en Tucumán",
     price: 40000,
     category: "hoteles",
-    categoryCart: "Destinos top",
     cardImg: "./assets/img/Tucumanverano2022.jpg",
   },
 ];
 
 const divideProducts = (size) => {
-    let listaProductos = [];
-    for(let i = 0; i < productsData.length; i += size)
+  let listaProductos = [];
+  for (let i = 0; i < productsData.length; i += size)
     listaProductos.push(productsData.slice(i, i + size));
-return listaProductos;
+  return listaProductos;
 };
 
 const appState = {
-    products: divideProducts(4), 
-    currentProductsIndex: 0, 
-    productsLimit: divideProducts(4).length,
-    activeFilter: null 
+  products: divideProducts(4),
+  currentProductsIndex: 0,
+  productsLimit: divideProducts(4).length,
+  activeFilter: null,
 };
