@@ -117,8 +117,9 @@
 
     /* Header */
     .menu-label img {
-        height: 40px;
-        width: 40px;
+        height: 30px;
+        width: 30px;
+        margin-right: 12px;
     }
 
     .menu-label {
@@ -149,7 +150,11 @@
         display: flex;
     }
 
-    .navbar-list a, .register a, .register p {
+    .register a, .register p {
+        font-size: 18px;
+    }
+
+    .navbar-list a {
         font-size: 20px;
     }
 
