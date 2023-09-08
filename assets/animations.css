@@ -150,9 +150,41 @@ html {
 	animation: pulsate-bck 0.5s ease-in-out infinite both;
 }
 
+.cart-item:hover {
+    box-shadow: 0 0px 10px 0 #af621b;
+    transition: box-shadow 0.2s ease-out;
+}
+
 .boton-cards:hover {
-    background: #af621b;
-    transition: background-color 0.5s ease-out;
+    background-color: #af621b;
+    transition: background-color 0.4s ease-out;
+}
+
+.up:hover {
+    background-color: #21950c;
+    transition: background-color 0.2s ease-out;
+}
+
+.down:hover {
+    background-color: #dc3545;
+    transition: background-color 0.2s ease-out;
+}
+
+.btn-buy:hover {
+    background: #2bcd51;
+    transition: 0.2s all ease-in;
+}
+
+.btn-delete:hover {
+    background: #dd1010;
+    transition: 0.2s all ease-in;
+}
+
+.disabled:hover {
+    background-color: #474b51;
+    color: white;
+    cursor: not-allowed;
+    border: none;
 }
 
 .paquetes-item

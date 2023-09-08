@@ -32,7 +32,7 @@ const saveCart = () => {
 };
 
 const createProductTemplate = (product) => {
-  const { id, name, price, cardImg, category } = product;
+  const { id, name, price, cardImg, category, categoryCart } = product;
   return `
     
     <div class="paquetes-item">
@@ -54,7 +54,8 @@ const createProductTemplate = (product) => {
                 data-name='${name}'
                 data-price='${price}'
                 data-category='${category}'
-                data-img='${cardImg}'><span class="button-cards">Comprar</span></button>
+                data-categoryCart='${categoryCart}'
+                data-img='${cardImg}'>Comprar</button>
             </div>
           </div>`;
 };
@@ -186,15 +187,15 @@ const renderCart = () => {
 };
 
 const createCartProductTemplate = (cartProduct) => {
-  const { id, name, price, img, quantity, category } = cartProduct;
-  
+  const { id, name, price, img, quantity, categoryCart } = cartProduct;
+  console.log(cartProduct);
   return `
     <div class="cart-item">
       <img src=${img} alt="${name}" />
       <div class="item-info">
         <h3 class="item-title">${name}</h3>
-        <p class="item-bid">${category}</p>
-        <span class="item-price">${price}</span>
+        <p class="item-bid">${categoryCart}</p>
+        <span class="item-price">$${price}</span>
       </div>
       <div class="item-handler">
         <span class="quantity-handler down" data-id=${id}>-</span>
@@ -232,8 +233,8 @@ const addProduct = (e) => {
 };
 
 const createProductData = (product) => {
-  const { id, name, price, img, category } = product;
-  return { id, name, price, img, category };
+  const { id, name, price, img, category, categoryCart } = product;
+  return { id, name, price, img, category, categoryCart };
 }; 
 
 const isExistingCartProduct = (product) => {
@@ -294,9 +295,7 @@ const handleMinusBtnEvent = (id) => {
   const existingCartProduct = cart.find((item) => item.id === id);
 
   if (existingCartProduct.quantity === 1) {
-    if (window.confirm("¿Desea Eliminar el producto del carrito?")) {
       removeProductFromCart(existingCartProduct);
-    }
     return;
   }
   substractProductUnit(existingCartProduct);
