@@ -79,6 +79,10 @@
         width: 40%;
     }
 
+    .products-container {
+        gap: 35px;
+    };
+
     .item-info h3 {
         font-size: 30px;
     }
